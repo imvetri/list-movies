@@ -12,5 +12,8 @@
     "local"
   ],
   "author": "vetrivel",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }
