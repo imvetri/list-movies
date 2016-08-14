@@ -1,11 +1,14 @@
 var chai = require("chai");
+
 var expect = chai.expect;
+var assert = chai.assert;
 
 var ListMovies = require("../index.js");
 
-describe( 'listsMovies' , function(){
-  it('it returns a object with actionable functions exposed' , function(){
+describe( 'listsMovies' , () => {
+  it('it returns a object' , done => {
     var listMovies = new ListMovies();
-    expect(listMovies).to.equal(undefined);
+    assert.typeOf(listMovies , 'object');
+    done();
   })
 });
